@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with OTP Verification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the To-Do List App</h1>
+        <div id="otp-section" class="hidden">
+            <h2>Verify Your Email</h2>
+            <form id="otp-form">
+                <input type="text" id="otp" placeholder="Enter OTP" required>
+                <button type="submit">Verify OTP</button>
+            </form>
+        </div>
+
+        <div id="todo-section" class="hidden">
+            <h2>To-Do List</h2>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Add a new task" required>
+                <button type="submit">Add Task</button>
+            </form>
+            <ul id="task-list"></ul>
+        </div>
+
+        <div id="form-section">
+            <h2>Enter Your Details</h2>
+            <form id="user-form">
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
